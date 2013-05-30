@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aprendeandroid.sqlitealbum"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <permission android:name="com.aprendeandroid.sqlitealbum.AlbumReadPermission" >
+    </permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.aprendeandroid.sqlitealbum.SqlActivity"
+            android:label="@string/title_activity_sql">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.aprendeandroid.sqlitealbum.AlbumContentProvider"
+            android:authorities="com.aprendeandroid.sqlitealbum"
+            android:exported="true"
+            android:readPermission="com.aprendeandroid.sqlitealbum.AlbumReadPermission"
+            android:writePermission="com.aprendeandroid.sqlitealbum.AlbumWritePermission" />
+
+        <activity
+            android:name="com.aprendeandroid.sqlitealbum.DBDetail"
+            android:label="@string/title_activity_dbdetail" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/margen10"
+    android:background="@color/fondoDetalle"
+    tools:context=".DBDetail" >
+	<TextView
+        android:id="@+id/textMode"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margen10" 
+        android:text="" />
+	
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMode" 
+        android:paddingTop="@dimen/margen25"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margen10" 
+        android:text="@string/textTitle" />
+    
+    
+     <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textTitle"
+        android:layout_alignBaseline="@+id/textTitle"
+        android:layout_marginRight="@dimen/margen25"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+               
+        />
+     
+     <TextView
+        android:id="@+id/textComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"      
+        android:paddingTop="@dimen/margen25"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margen10" 
+        android:text="@string/textComment" />
+    
+    
+     <EditText
+        android:id="@+id/editComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textComment"
+        android:layout_alignBaseline="@+id/textComment"    
+        android:layout_marginRight="@dimen/margen25"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"				   
+		android:background="@android:color/white"
+        android:singleLine="true"
+		android:maxLines="4" 
+    	android:lines="3"      
+        />
+     
+     
+     
+     <TextView
+        android:id="@+id/textImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textComment"      
+        android:paddingTop="@dimen/margen25"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margen10" 
+        android:text="@string/textImage" />
+    
+   
+      <ImageView
+	        android:id="@+id/editImage"
+	        android:layout_width="@dimen/imagen_dimen"	         
+	        android:layout_height="@dimen/imagen_dimen"
+	        android:layout_below="@+id/textImage"	       
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:adjustViewBounds="true"
+	        android:src="@drawable/noquestion"
+	        android:onClick="seleccionaImagen" />
+      
+    
+        
+
+</RelativeLayout>

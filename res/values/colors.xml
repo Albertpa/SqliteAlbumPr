@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fondoTop">#AACC33</color>
+    <color name="fondoItem">#55FFAA00</color>
+    <color name="fondoDetalle">#44D98E00</color>
+</resources>

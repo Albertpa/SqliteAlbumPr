@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SqliteAlbum</string>
+    <string name="no_data">No data</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sql">SqliteAlbum</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit">Edit</string>
+    <string name="add_new">Add new</string>
+    <string name="add_edit">Edit</string>
+    <string name="title_activity_dbdetail">DBDetail</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textTitle">Titulo:</string>
+    <string name="textComment">Comentario: </string> 
+    <string name="textImage">Imagen: </string>
+    <string name="saveEdit">Guardar </string>  
+
+</resources>
